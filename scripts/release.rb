@@ -5,6 +5,8 @@ require "digest"
 version = ARGV[0]
 if version == nil
   abort "Usage: release.rb [x.y.z]"
+else
+  version = version.gsub(/[a-z-]*/i, "")
 end
 
 puts "Releasing Bun on Homebrew: v#{version}"
