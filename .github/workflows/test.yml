@@ -2,12 +2,12 @@ name: test
 on:
   push:
     paths:
-      - formula/**.rb
+      - Formula/**.rb
     branches:
       - main
   pull_request:
     paths:
-      - formula/**.rb
+      - Formula/**.rb
     branches:
       - main
   workflow_dispatch:
