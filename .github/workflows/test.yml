@@ -33,7 +33,7 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master # no releases? :(
       - id: setup-tap
         name: Setup Tap
-        run: brew install oven-sh/bun ./
+        run: brew tap oven-sh/bun ./
       - id: install-bun
         name: Install Bun
         run: brew install bun
