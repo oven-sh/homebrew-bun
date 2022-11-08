@@ -45,7 +45,7 @@ for asset in release["assets"]
 end
 
 formula = ""
-File.open("formula/bun.rb", "r") do |file|
+File.open("Formula/bun.rb", "r") do |file|
   file.each_line do |line|
     query = line.strip
 
@@ -68,11 +68,11 @@ end
 
 versioned_class = "class BunAT#{version.gsub(/\./, "")}"
 versioned_formula = formula.gsub(/class Bun/, versioned_class)
-File.write("formula/bun@#{version}.rb", versioned_formula)
-puts "Saved formula/bun@#{version}.rb"
+File.write("Formula/bun@#{version}.rb", versioned_formula)
+puts "Saved Formula/bun@#{version}.rb"
 
-File.write("formula/bun.rb", formula)
-puts "Saved formula/bun.rb"
+File.write("Formula/bun.rb", formula)
+puts "Saved Formula/bun.rb"
 
 readme = File.read("README.md")
 new_readme = readme.gsub(/bun@[0-9]{1,}\.[0-9]{1,}\.[0-9]{1,}/, "bun@#{version}")
