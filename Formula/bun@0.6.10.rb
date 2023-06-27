@@ -1,4 +1,4 @@
-class Bun < Formula
+class BunAT0610 < Formula
   desc "Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one."
   homepage "https://bun.sh/"
   license "MIT"
