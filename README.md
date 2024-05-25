@@ -14,7 +14,7 @@ brew install bun
 If you want to install a specific release, you can include the version in the command. You can also view the list of releases [here](https://github.com/oven-sh/bun/releases).
 
 ```bash
-brew install bun@1.1.9
+brew install bun@1.1.10
 ```
 
 ## Upgrade
